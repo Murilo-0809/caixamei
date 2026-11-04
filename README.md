@@ -8,8 +8,8 @@ Informática da Escola Técnica Estadual Monteiro Lobato, Taquara/RS, 2026.
 **Autor:** Murilo dos Santos Müller
 **Orientador:** Cândido Luciano de Farias
 
-**Aplicação rodando:** (link a ser preenchido após a publicação)
-**Repositório público:** (link a ser preenchido após a publicação)
+**Aplicação rodando:** https://murilo-0809.github.io/caixamei/
+**Repositório público:** https://github.com/Murilo-0809/caixamei
 
 ---
 

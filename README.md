@@ -8,8 +8,8 @@ Informática da Escola Técnica Estadual Monteiro Lobato, Taquara/RS, 2026.
 **Autor:** Murilo dos Santos Müller
 **Orientador:** Cândido Luciano de Farias
 
-**Aplicação rodando:** https://murilo-0809.github.io/caixamei/
-**Repositório público:** https://github.com/Murilo-0809/caixamei
+**Aplicação rodando:** (link a ser preenchido após a publicação)
+**Repositório público:** (link a ser preenchido após a publicação)
 
 ---
 
@@ -44,7 +44,27 @@ permite comparar dias parecidos entre si.
 
 ## Testes com usuários
 
-(a ser preenchido após os testes: Matriz de Feedback e a melhoria aplicada)
+O protótipo foi apresentado a usuários reais, que navegaram pelo sistema e
+responderam o que mudariam. As respostas estão na matriz abaixo.
+
+### Matriz de Feedback
+
+| Usuário | O que sugeriu | O que foi feito |
+|---|---|---|
+| 1 | Registrar as despesas item a item, em vez de um valor único. No lugar de R$ 100,00 de saída, poder lançar R$ 50,00 de uma coisa e R$ 50,00 de outra. | Registrado para uma próxima versão. Muda a estrutura dos dados e afeta o fechamento, o histórico e os relatórios. |
+| 2 | Poder registrar o fechamento por voz. | Registrado em "Continuidade do projeto". Depende de reconhecimento de fala, fora do escopo deste protótipo. |
+| 3 | Ter um modo escuro para quem prefere. | **Implementado.** |
+
+### Melhoria aplicada
+
+O modo escuro foi implementado a partir da sugestão do usuário 3. Todas as
+cores do sistema já estavam em variáveis CSS, então bastou criar um segundo
+conjunto de valores dentro de `body.escuro` e um botão que põe ou tira essa
+classe. A escolha fica salva no `localStorage`, então vale para todas as
+telas e continua valendo quando a pessoa volta ao sistema.
+
+Arquivos envolvidos: `js/tema.js` (novo) e a seção de modo escuro do
+`css/style.css`.
 
 ---
 
@@ -97,6 +117,7 @@ caixamei/
 │   ├── componentes.js      Pedaços de HTML que se repetem em várias telas
 │   ├── menu.js             Menu lateral e partes comuns às telas do sistema
 │   ├── demonstracao.js     Geração dos dados fictícios de teste
+│   ├── tema.js             Modo claro e modo escuro
 │   └── (um arquivo por tela: inicio.js, fechar.js, historico.js, etc.)
 └── assets/                 Logotipo, símbolo e favicon
 ```

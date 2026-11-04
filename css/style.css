@@ -58,6 +58,118 @@
 }
 
 
+/* Modo escuro. O JavaScript põe a classe "escuro" no body e só com isso
+   todas as variáveis abaixo trocam de valor, mudando o sistema inteiro.
+   Os azuis quase não mudam, porque o texto branco em cima deles precisa
+   continuar legível. */
+body.escuro {
+  --azul-50:  #17213a;
+  --azul-100: #1e2c4b;
+  --azul-200: #2a3e66;
+  --azul-300: #41619f;
+  --azul-500: #4b82e8;
+  --azul-600: #3a6fd8;
+  --azul-700: #5b91f0;
+  --azul-900: #cfdffb;
+
+  --branco: #171c28;
+  --fundo: #0f131d;
+  --fundo-2: #1c2230;
+  --borda: #2b3445;
+  --borda-forte: #3d4859;
+  --texto: #e9edf5;
+  --texto-2: #b4bdcd;
+  --texto-3: #8893a7;
+
+  --positivo: #49c79b;
+  --positivo-fundo: #10332a;
+  --negativo: #f08a7e;
+  --negativo-fundo: #3a1d19;
+  --atencao: #e5b366;
+  --atencao-fundo: #3a2c13;
+  --neutro-fundo: #222a3a;
+
+  --sombra-1: 0 1px 2px rgba(0, 0, 0, .45);
+  --sombra-2: 0 4px 16px rgba(0, 0, 0, .5);
+  --sombra-3: 0 12px 40px rgba(0, 0, 0, .6);
+}
+
+/* Nestes lugares o texto fica em cima de uma cor forte, então continua
+   branco nos dois modos. */
+body.escuro .btn-primario,
+body.escuro .btn-perigo,
+body.escuro .dia-chip input:checked + span,
+body.escuro .aviso-rapido,
+body.escuro .lp-avatar,
+body.escuro .lp-plano-selo,
+body.escuro .lp-final,
+body.escuro .cta-fechar {
+  color: #ffffff;
+}
+
+/* A logo é escrita em preto e azul, então no escuro ela fica branca. */
+body.escuro .logo-grande,
+body.escuro .logo-form,
+body.escuro .logo-topo,
+body.escuro .logo-sidebar {
+  filter: brightness(0) invert(1);
+}
+
+/* Barras de topo que ficam coladas na tela e usam fundo transparente. */
+body.escuro .lp-topo {
+  background: rgba(23, 28, 40, .92);
+}
+
+body.escuro .topo {
+  background: rgba(15, 19, 29, .92);
+}
+
+body.escuro .alerta-atencao,
+body.escuro .faixa-demo {
+  border-color: #4d3c18;
+}
+
+body.escuro .alerta-ok {
+  border-color: #1d4c3c;
+}
+
+body.escuro .alerta-erro {
+  border-color: #552b25;
+}
+
+/* As duas faixas azuis grandes ficam em um azul mais fundo no modo escuro,
+   senão o texto branco em cima delas perde a leitura. */
+body.escuro .lp-final,
+body.escuro .cta-fechar {
+  background: #1f4596;
+}
+
+body.escuro .cta-fechar p {
+  color: #bfd3f7;
+}
+
+body.escuro .lp-final .btn,
+body.escuro .cta-fechar .btn {
+  background: #ffffff;
+  color: #17336b;
+}
+
+body.escuro .lp-final .btn:hover,
+body.escuro .cta-fechar .btn:hover {
+  background: #dbe7ff;
+}
+
+/* Botão do tema nas telas que não têm barra de topo. */
+.btn-tema-solto {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 30;
+  background: var(--branco);
+  border: 1px solid var(--borda);
+}
+
+
 /* 2. ESTILOS BÁSICOS ====================================================== */
 * {
   box-sizing: border-box;

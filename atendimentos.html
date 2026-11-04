@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaixaMEI | Como você chama seus atendimentos</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="centralizado">
+
+<main class="caixa-form caixa-form-estreita">
+
+  <a class="voltar" href="apresentacao.html">
+    <svg class="ico" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    Voltar
+  </a>
+
+  <!-- Primeira das duas perguntas da configuração inicial -->
+  <div class="passos">
+    <span class="passo ativo"></span>
+    <span class="passo"></span>
+  </div>
+
+  <h1 class="titulo-form">Como você chama os seus atendimentos?</h1>
+  <p class="texto-form">
+    O sistema vai usar essa palavra em todas as telas, para ficar parecido com o
+    jeito que você fala do seu negócio.
+  </p>
+
+  <div class="escolhas" id="escolhas-termo">
+    <label class="escolha">
+      <input type="radio" name="termo" value="vendas" checked>
+      <span>
+        <strong>Vendas</strong>
+        <em>“Hoje foram 32 vendas”</em>
+      </span>
+    </label>
+
+    <label class="escolha">
+      <input type="radio" name="termo" value="clientes">
+      <span>
+        <strong>Clientes</strong>
+        <em>“Hoje foram 32 clientes”</em>
+      </span>
+    </label>
+
+    <label class="escolha">
+      <input type="radio" name="termo" value="servicos">
+      <span>
+        <strong>Serviços</strong>
+        <em>“Hoje foram 32 serviços”</em>
+      </span>
+    </label>
+
+    <label class="escolha">
+      <input type="radio" name="termo" value="pedidos">
+      <span>
+        <strong>Pedidos</strong>
+        <em>“Hoje foram 32 pedidos”</em>
+      </span>
+    </label>
+  </div>
+
+  <button class="btn btn-primario btn-grande btn-bloco" type="button" id="btn-continuar">
+    Continuar
+  </button>
+</main>
+
+<script src="js/funcoes.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/componentes.js"></script>
+<script src="js/atendimentos.js"></script>
+</body>
+</html>

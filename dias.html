@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaixaMEI | Dias de funcionamento</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="centralizado">
+
+<main class="caixa-form caixa-form-estreita">
+
+  <a class="voltar" href="atendimentos.html">
+    <svg class="ico" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    Voltar
+  </a>
+
+  <!-- Segunda das duas perguntas da configuração inicial -->
+  <div class="passos">
+    <span class="passo ativo"></span>
+    <span class="passo ativo"></span>
+  </div>
+
+  <h1 class="titulo-form">Em quais dias você costuma abrir?</h1>
+  <p class="texto-form">
+    O CaixaMEI usa isso para avisar quando algum dia de funcionamento ficar sem
+    fechamento. Você pode mudar depois nas configurações.
+  </p>
+
+  <div class="dias-semana dias-semana-solto" id="dias-semana-inicial">
+    <label class="dia-chip"><input type="checkbox" value="0"><span>D</span></label>
+    <label class="dia-chip"><input type="checkbox" value="1" checked><span>S</span></label>
+    <label class="dia-chip"><input type="checkbox" value="2" checked><span>T</span></label>
+    <label class="dia-chip"><input type="checkbox" value="3" checked><span>Q</span></label>
+    <label class="dia-chip"><input type="checkbox" value="4" checked><span>Q</span></label>
+    <label class="dia-chip"><input type="checkbox" value="5" checked><span>S</span></label>
+    <label class="dia-chip"><input type="checkbox" value="6"><span>S</span></label>
+  </div>
+
+  <p class="campo-erro" id="erro-dias"></p>
+
+  <button class="btn btn-primario btn-grande btn-bloco" type="button" id="btn-continuar">
+    Entrar no CaixaMEI
+  </button>
+</main>
+
+<script src="js/funcoes.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/componentes.js"></script>
+<script src="js/dias.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaixaMEI | Entrar</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="centralizado">
+
+<main class="caixa-form caixa-form-estreita">
+
+  <a class="voltar" href="apresentacao.html">
+    <svg class="ico" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    Voltar
+  </a>
+
+  <img class="logo-form" src="assets/logo-caixamei.png" alt="CaixaMEI">
+  <h1 class="titulo-form">Entrar na minha conta</h1>
+  <p class="texto-form">Bem-vindo de volta. Vamos fechar o caixa?</p>
+
+  <form id="form-login" novalidate>
+
+    <div class="campo">
+      <label class="campo-rotulo" for="log-email">E-mail</label>
+      <input class="input" type="text" id="log-email" placeholder="voce@gmail.com">
+      <p class="campo-erro" id="erro-log-email"></p>
+    </div>
+
+    <div class="campo">
+      <label class="campo-rotulo" for="log-senha">Senha</label>
+      <div class="campo-com-botao">
+        <input class="input" type="password" id="log-senha" placeholder="Sua senha">
+        <button class="btn-olho" type="button" id="olho-log-senha" aria-label="Mostrar a senha"></button>
+      </div>
+      <p class="campo-erro" id="erro-log-senha"></p>
+    </div>
+
+    <label class="checkbox">
+      <input type="checkbox" id="log-lembrar">
+      <span>Lembrar de mim neste aparelho</span>
+    </label>
+
+    <button class="btn btn-primario btn-grande btn-bloco" type="submit">Entrar</button>
+  </form>
+
+  <p class="rodape-form">
+    Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+  </p>
+</main>
+
+<script src="js/funcoes.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/componentes.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

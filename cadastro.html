@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaixaMEI | Criar minha conta</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="centralizado">
+
+<main class="caixa-form">
+
+  <a class="voltar" href="apresentacao.html">
+    <svg class="ico" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    Voltar
+  </a>
+
+  <img class="logo-form" src="assets/logo-caixamei.png" alt="CaixaMEI">
+  <h1 class="titulo-form">Criar minha conta</h1>
+  <p class="texto-form">Leva menos de um minuto. Lembre-se de usar dados fictícios.</p>
+
+  <form id="form-cadastro" novalidate>
+
+    <div class="campo">
+      <label class="campo-rotulo" for="cad-nome">Nome completo</label>
+      <input class="input" type="text" id="cad-nome" placeholder="Maria da Silva">
+      <p class="campo-erro" id="erro-cad-nome"></p>
+    </div>
+
+    <div class="campo">
+      <label class="campo-rotulo" for="cad-negocio">Nome do negócio</label>
+      <input class="input" type="text" id="cad-negocio" placeholder="Lancheria da Maria">
+      <p class="campo-erro" id="erro-cad-negocio"></p>
+    </div>
+
+    <div class="form-grid">
+      <div class="campo">
+        <label class="campo-rotulo" for="cad-cnpj">CNPJ</label>
+        <input class="input" type="text" id="cad-cnpj" placeholder="00.000.000/0001-00" inputmode="numeric">
+        <p class="campo-erro" id="erro-cad-cnpj"></p>
+      </div>
+
+      <div class="campo">
+        <label class="campo-rotulo" for="cad-ramo">Ramo de atividade</label>
+        <select class="select" id="cad-ramo">
+          <option value="">Selecione…</option>
+          <option>Alimentação</option>
+          <option>Comércio / Loja</option>
+          <option>Beleza e estética</option>
+          <option>Serviços em geral</option>
+          <option>Construção e reformas</option>
+          <option>Transporte e entregas</option>
+          <option>Artesanato</option>
+          <option>Tecnologia</option>
+          <option>Outro</option>
+        </select>
+        <p class="campo-erro" id="erro-cad-ramo"></p>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label class="campo-rotulo" for="cad-email">E-mail</label>
+      <input class="input" type="text" id="cad-email" placeholder="voce@gmail.com">
+      <p class="campo-erro" id="erro-cad-email"></p>
+    </div>
+
+    <div class="form-grid">
+      <div class="campo">
+        <label class="campo-rotulo" for="cad-senha">Senha</label>
+        <div class="campo-com-botao">
+          <input class="input" type="password" id="cad-senha" placeholder="Mínimo de 8 caracteres">
+          <button class="btn-olho" type="button" id="olho-cad-senha" aria-label="Mostrar a senha"></button>
+        </div>
+        <p class="campo-erro" id="erro-cad-senha"></p>
+      </div>
+
+      <div class="campo">
+        <label class="campo-rotulo" for="cad-senha2">Confirmar senha</label>
+        <div class="campo-com-botao">
+          <input class="input" type="password" id="cad-senha2" placeholder="Repita a senha">
+          <button class="btn-olho" type="button" id="olho-cad-senha2" aria-label="Mostrar a senha"></button>
+        </div>
+        <p class="campo-erro" id="erro-cad-senha2"></p>
+      </div>
+    </div>
+
+    <label class="checkbox">
+      <input type="checkbox" id="cad-termos">
+      <span>Li e concordo com os <a href="#" id="link-termos">Termos de Uso</a> e com a
+      <a href="#" id="link-privacidade">Política de Privacidade</a>.</span>
+    </label>
+    <p class="campo-erro" id="erro-cad-termos"></p>
+
+    <button class="btn btn-primario btn-grande btn-bloco" type="submit">Criar minha conta</button>
+  </form>
+
+  <p class="rodape-form">
+    Já tem uma conta? <a href="login.html">Entrar</a>
+  </p>
+</main>
+
+<script src="js/funcoes.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/componentes.js"></script>
+<script src="js/cadastro.js"></script>
+</body>
+</html>

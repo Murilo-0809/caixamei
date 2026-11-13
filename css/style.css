@@ -159,17 +159,6 @@ body.escuro .cta-fechar .btn:hover {
   background: #dbe7ff;
 }
 
-/* Botão do tema nas telas que não têm barra de topo. */
-.btn-tema-solto {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 30;
-  background: var(--branco);
-  border: 1px solid var(--borda);
-}
-
-
 /* 2. ESTILOS BÁSICOS ====================================================== */
 * {
   box-sizing: border-box;
@@ -1971,7 +1960,14 @@ body.sistema {
     font-size: 22px;
   }
 
-  .lp-topo-acoes .btn-sutil {
+  /* O topo do celular fica só com o logo e o botão de tema. Os botões de
+     entrar e de começar aparecem logo abaixo, na chamada principal. */
+  .logo-topo {
+    height: 24px;
+  }
+
+  .lp-topo-acoes .btn-sutil,
+  .lp-topo-acoes .btn-primario {
     display: none;
   }
 
